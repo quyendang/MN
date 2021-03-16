@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="loadingcell" id="U6b-Vx-4bR" customClass="LoadMoreReusableView" customModule="musicnow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-Qi-ZTE">
+                    <rect key="frame" x="150" y="16" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="FPx-Qi-ZTE" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Wij-dJ-cOM"/>
+                <constraint firstItem="FPx-Qi-ZTE" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" id="YNd-8z-jwp"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="FPx-Qi-ZTE" id="p8u-93-T6V"/>
+            </connections>
+            <point key="canvasLocation" x="27.536231884057973" y="48.883928571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>

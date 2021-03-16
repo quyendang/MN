@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.1)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SnapKit (5.0.1)
+  - XCDYouTubeKit (2.15.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - PromiseKit
+  - SDWebImage
+  - SnapKit
+  - XCDYouTubeKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PromiseKit
+    - SDWebImage
+    - SnapKit
+    - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  XCDYouTubeKit: b120aced3d8638ffb570c5450cddb5a1dac448c7
+
+PODFILE CHECKSUM: 35479c4bbe2cd9796542e193098ba2f988a4a716
+
+COCOAPODS: 1.10.0

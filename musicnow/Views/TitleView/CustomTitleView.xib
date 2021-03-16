@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTitleView" customModule="musicnow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="itA-z2-AsQ" userLabel="Outer Stack View">
+                    <rect key="frame" x="10" y="0.0" width="394" height="95"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibm-I4-2ak">
+                            <rect key="frame" x="0.0" y="37" width="40.5" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-yx-V36">
+                            <rect key="frame" x="48.5" y="33" width="345.5" height="29"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-Hb-DIa">
+                                    <rect key="frame" x="0.0" y="0.0" width="4" height="29"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="4" id="ipY-07-INZ"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BL-2H-ESm">
+                                    <rect key="frame" x="8" y="0.0" width="309.5" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="NDP-xV-gox">
+                                    <rect key="frame" x="321.5" y="5.5" width="16" height="18"/>
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-nK-2cd">
+                                    <rect key="frame" x="341.5" y="0.0" width="4" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="4" id="Eyd-eq-U6n"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="sls-9x-wQd"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOu-yA-xha">
+                    <rect key="frame" x="10" y="-8" width="394" height="95"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="expand:" destination="iN0-l3-epB" eventType="touchUpInside" id="NBB-T1-2jX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="a2C-zM-eJF"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VOu-yA-xha" firstAttribute="bottom" secondItem="itA-z2-AsQ" secondAttribute="bottom" constant="-8" id="6MZ-ZG-I1y"/>
+                <constraint firstItem="a2C-zM-eJF" firstAttribute="bottom" secondItem="itA-z2-AsQ" secondAttribute="bottom" id="Cj7-mg-D4Y"/>
+                <constraint firstItem="VOu-yA-xha" firstAttribute="top" secondItem="itA-z2-AsQ" secondAttribute="top" constant="-8" id="FFO-03-v0a"/>
+                <constraint firstItem="a2C-zM-eJF" firstAttribute="trailing" secondItem="itA-z2-AsQ" secondAttribute="trailing" constant="10" id="aL0-Vg-wS7"/>
+                <constraint firstItem="VOu-yA-xha" firstAttribute="trailing" secondItem="itA-z2-AsQ" secondAttribute="trailing" id="cgL-hQ-40Z"/>
+                <constraint firstItem="VOu-yA-xha" firstAttribute="leading" secondItem="itA-z2-AsQ" secondAttribute="leading" id="kRD-cm-dqq"/>
+                <constraint firstItem="itA-z2-AsQ" firstAttribute="leading" secondItem="a2C-zM-eJF" secondAttribute="leading" constant="10" id="mHk-ng-EOi"/>
+                <constraint firstItem="itA-z2-AsQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oj9-SW-39m"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="VOu-yA-xha" id="NVF-rQ-SEO"/>
+                <outlet property="actionImageView" destination="NDP-xV-gox" id="aGq-E5-OUG"/>
+                <outlet property="titleLabel" destination="5BL-2H-ESm" id="60I-9Z-3r8"/>
+                <outlet property="titleViewStack" destination="YAb-yx-V36" id="8Xb-H9-S0r"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
