@@ -114,43 +114,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtr-wq-3L3">
-                                                    <rect key="frame" x="348.5" y="0.0" width="55.5" height="55.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Mtr-wq-3L3" secondAttribute="height" id="L5k-pr-67a"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <state key="normal">
-                                                        <imageReference key="image" image="shuffle.circle" catalog="system" symbolScale="large"/>
-                                                    </state>
-                                                    <state key="selected">
-                                                        <imageReference key="image" image="shuffle.circle.fill" catalog="system" symbolScale="large"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <imageReference key="image" image="shuffle.circle.fill" catalog="system" symbolScale="large"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="shuffle:" destination="ZMH-9Y-In2" eventType="touchUpInside" id="88h-hq-p7R"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-UD-mpf">
-                                                    <rect key="frame" x="20" y="15" width="41" height="25.5"/>
+                                                    <rect key="frame" x="20" y="15" width="374" height="25.5"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Mtr-wq-3L3" secondAttribute="bottom" id="9M5-LY-3Zu"/>
                                                 <constraint firstItem="h6e-UD-mpf" firstAttribute="top" secondItem="8Xa-Vx-VEP" secondAttribute="top" constant="15" id="SO9-ML-QHe"/>
                                                 <constraint firstAttribute="bottom" secondItem="h6e-UD-mpf" secondAttribute="bottom" constant="15" id="UHf-7i-TMT"/>
                                                 <constraint firstItem="h6e-UD-mpf" firstAttribute="leading" secondItem="8Xa-Vx-VEP" secondAttribute="leading" constant="20" id="ead-B7-ovL"/>
-                                                <constraint firstAttribute="trailing" secondItem="Mtr-wq-3L3" secondAttribute="trailing" constant="10" id="kRd-rP-QEQ"/>
-                                                <constraint firstItem="Mtr-wq-3L3" firstAttribute="top" secondItem="8Xa-Vx-VEP" secondAttribute="top" id="zxd-Bu-Ah1"/>
+                                                <constraint firstAttribute="trailing" secondItem="h6e-UD-mpf" secondAttribute="trailing" constant="20" id="oeS-BS-cId"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="shuffleButton" destination="Mtr-wq-3L3" id="dyc-ls-GIT"/>
                                             <outlet property="titleLabel" destination="h6e-UD-mpf" id="jdO-mJ-T8m"/>
                                         </connections>
                                     </tableViewCell>
@@ -214,8 +192,6 @@
     </scenes>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="shuffle.circle" catalog="system" width="128" height="121"/>
-        <image name="shuffle.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
